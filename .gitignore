@@ -54,7 +54,7 @@ src/transcripts
 src/*.bak
 src/*.tmp
 src/*.log
-src/talkingTom-9.27/
+talkingTom-9.27/
 
 # Ignore README.md
 *.md
