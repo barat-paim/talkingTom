@@ -1,3 +1,4 @@
+
 # Byte-compiled /optimized/ DLL files
 __pycache__/
 *.py[cod]
@@ -53,6 +54,10 @@ src/transcripts
 src/*.bak
 src/*.tmp
 src/*.log
+src/talkingTom-9.27/
+
+# Ignore README.md
+*.md
 
 # Ignore system files
 .DS_store
