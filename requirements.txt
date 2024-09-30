@@ -1,0 +1,9 @@
+requests
+transformers
+newsapi-python-0.2.7
+requests
+pydub
+torch
+torchaudio
+scipy
+numpy

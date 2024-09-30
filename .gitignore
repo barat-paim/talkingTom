@@ -1,0 +1,59 @@
+# Byte-compiled /optimized/ DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# Distribution / packaging
+.Python
+build/
+dist/
+downloads/
+lib/
+lib64/
+parts/
+sdist/
+var/
+
+.pytest_cache/
+cover/
+
+# Flash stuff:
+instance/
+.webassets-cache
+
+# Scrappy stuff:
+.scrapy
+
+# Sphinx documentation
+docs/_build/
+
+#PyBuilder
+target/
+
+
+#pyenv
+.python-version
+
+# Environments
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# Custom exclusions
+src/app.py
+src/main.py
+src/news_fetcher.py
+src/summarizer.py
+src/transcript_1.txt
+src/transcripts
+src/*.bak
+src/*.tmp
+src/*.log
+
+# Ignore system files
+.DS_store
+Thumbs.db
