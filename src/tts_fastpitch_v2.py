@@ -2,16 +2,17 @@ import torch
 import torchaudio
 from pydub import AudioSegment
 from pydub.playback import play
-from fastpitch.model import FastPitch
-from fastpitch.text import text_to_sequence
+from nemo.collections.tts.models import FastPitchModel
+from nemo.collections.tts.g2p import EnglishG2p
 
 # Load pre-trained FastPitch model
-model = FastPitch.from_pretrained("nvidia/fastpitch")
+model = FastPitchModel.from_pretrained(model_name="tts_en_fastpitch")
 model.eval()
 
 def generate_speech_fastpitch(text, pitch_shift=0, speed=1.0):
     # Convert text to phonemes
-    phonemes = text_to_sequence(text)
+    g2p = EnglishG2p()
+    phonemes = g2p(text)
     phonemes_tensor = torch.LongTensor(phonemes).unsqueeze(0)
 
     # Generate speech
