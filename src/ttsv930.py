@@ -39,7 +39,7 @@ def generate_tts(text):
         return None
     
 # Test the function
-text = "Hello, this is a test of the TTS function. Tom wants to know if it worked"
+text = "Hello, this is a test of the TTS function. and, Tom wants to know if it worked"
 output_file = generate_tts(text)    
 if output_file:
     audio = AudioSegment.from_file(output_file)
